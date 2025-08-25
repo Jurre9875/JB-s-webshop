@@ -1,3 +1,10 @@
+:root {
+    --mainbg-color: #000000;
+    --secondbg-color: #353535;
+    --fontcolor: #FFFFFF;
+    --acennt-color: blue
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,30 +14,46 @@ ul {
     margin:0;
     padding:0;
     overflow:hidden;
-    background-color: #202020;
+    background-color: #000000;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .logo {
     margin-left:60px;
-    margin-right:50%;
     font-size: 25px;
+    margin-right: 90%;
 }
 .container {
     font-size: 17px;
     display: grid;
     grid-template-columns: repeat(6, auto);
     gap: 15px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
-.inloggen {
-    background-color: blue;
+.inloggen, .inschrijven {
+    background-color: rgb(39, 39, 39);
+    border-radius: 12px;
+    padding: 8px 12px;    
+}
+.inloggen :hover, .inschrijven :hover {
+    background-color:  rgb(59, 59, 59);
     border-radius: 12px;
 }
-.inloggen :hover {
-    background-color: darkblue;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+
 }
 li {
     float: left;
