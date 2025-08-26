@@ -1,94 +1,137 @@
-:root {
-    --mainbg-color: #000000;
-    --secondbg-color: #353535;
-    --fontcolor: #FFFFFF;
-    --acennt-color: blue
-}
-
 body {
-    margin: 0;
-    padding: 0;
+    background-color: var(--primary-bgcolor);
 }
-ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow:hidden;
-    background-color: #000000;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+:root {
+    --primary-bgcolor:black;
+    --secondary-bgcolor:#525252;
+    --primary-textcolor:white;
+    --secondary-textcolor:#ccc;
+    --primary-butten-bgcolor:rgb(24, 101, 245);
+    --secondary-button-bgcolor:#333;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(black);
+  padding: 10px 20px;
+  position: sticky;
+  font-family: "worksans";
+}.logo {
+    color: var(--primary-butten-bgcolor);
+    font-size: 30px;
+    font-family:"worksans";
+    font-weight: 800;
+    font-style: italic;
+    margin-left: 5%;
+}
+.logo:hover {
+    cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-left: 49%;
+  font-size: 17px;
+}
+nav ul li:hover {
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.5s;
+}
 
-}
-.logo {
-    margin-left:60px;
-    font-size: 25px;
-    margin-right: 90%;
-}
-.container {
-    font-size: 17px;
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    gap: 15px;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-.inloggen, .inschrijven {
-    background-color: rgb(39, 39, 39);
-    border-radius: 12px;
-    padding: 8px 12px;    
-}
-.inloggen :hover, .inschrijven :hover {
-    background-color:  rgb(59, 59, 59);
-    border-radius: 12px;
+nav ul li {
+  display: flex;
+  align-items: center;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
 
+nav .buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 5%;
 }
-li {
-    float: left;
+
+nav .buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
 }
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
+.inloggen {
+    background-color: var(--secondary-button-bgcolor);
+}
+.inloggen:hover {
+    background-color: #777777;
+    transition:0.5s;
+}
+
+.Inschrijven {
+    background-color: var(--primary-butten-bgcolor);
+}
+.Inschrijven:hover {
+    background-color: rgb(75, 135, 247);
+    transition: 0.5s;
+}
+section {
+    height: 180vh;
+    background-color: var(--secondary-bgcolor);
+}
+section .hero-text {
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding-top:5%;
+    color: var(--primary-textcolor);
+    font-family: "worksans";
+    margin-left: 30%;
+    margin-right: 30%;
 }
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
+section .hero-text h1 {
+    font-size:90px;
 }
-li.dropdown {
-    display: inline-block;
+section .hero-text p {
+    font-size: 25px;
+    margin-top: -20px;
 }
-.dropdown-content {
-    display: none;
+section .hero-text button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.ontdek {
+    background-color: var(--primary-butten-bgcolor);
+}
+.ontdek:hover {
+    background-color: rgb(75, 135, 247);
+    transition: 0.5s;
+}
+.shop-now {
+    background-color: var(--secondary-button-bgcolor);
+}
+.shop-now:hover {
+    background-color: #777777;
+    transition:0.5s;
+}
+section .hero-text img {
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding : 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
+    top: 140%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 2%;
+}`
+.style-section {
+    height: 100vh;
+    background-color: var(--primary-bgcolor);
 }
