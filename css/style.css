@@ -3,7 +3,7 @@ body {
 }
 :root {
     --primary-bgcolor:black;
-    --secondary-bgcolor:#525252;
+    --secondary-bgcolor:#232529;
     --primary-textcolor:white;
     --secondary-textcolor:#ccc;
     --primary-butten-bgcolor:rgb(24, 101, 245);
@@ -130,8 +130,32 @@ section .hero-text img {
     left: 50%;
     translate: -50% -50%;
     border-radius: 2%;
-}`
+}
 .style-section {
-    height: 100vh;
-    background-color: var(--primary-bgcolor);
+    height: 180vh;
+    background-color: var(--secondary-bgcolor);
+    color: var(--primary-textcolor);
+    font-family: "worksans";
+}
+.style-section h2{
+    text-align: left;
+    font-size: 50px;
+    margin-left:16%;
+    margin-right:55%;
+}
+.style-section p {
+    text-align: left;
+    font-size: 22px;
+    margin-left:16%;
+    margin-right: 55%;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 16%;
+    margin-top: 6%;
+}
+.cards img {
+    border-radius: 8%;
 }
