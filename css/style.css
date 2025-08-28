@@ -263,3 +263,21 @@ section .hero-text img {
     display: flex;
     gap: 10px;
 }
+.facts-section {
+    height: 80vh;
+    background-color: var(--secondary-bgcolor);
+    color: var(--primary-textcolor);
+    font-family: "worksans";
+    text-align: center;
+}
+.facts-section h2 {
+    font-size: 50px;
+    padding-top: 6%;
+}
+.facts-section .facts-text .cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
